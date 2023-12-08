@@ -32,7 +32,7 @@
     <div id="nav">
         <div class="nav-img" id="nav-img"></div>
         <div class="sentences">
-            How goes the world with you?
+            云里写诗，泥里生活，岁月里洒脱。
         </div>
     </div>
 </header>
@@ -110,6 +110,54 @@
 <p>4.输入“service networking restart”重启网络<br>5.于kali端ping一下WWW.baidu.com看是否ping通。<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208131646647.png" alt="image-20231208131646647"><br>6.输入安装命令“apt-get install dsniff”<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208131714695.png" alt="image-20231208131714695"></p>
 <p>7.输入命令验证安装成功：arpspoof<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208131735096.png" alt="image-20231208131735096"></p>
 <p>8.输入命令攻击受害人“arpspoof -i eth0 -t 受害人IP 网关”，完成攻击<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208131804024.png" alt="image-20231208131804024"></p>
+<p><strong>Arpspoof</strong>的其他使用</p>
+<p>-i interface 指定要使用的接口</p>
+<p>-c own|host|both 指定范围own|host|both （自己|主机|两者）</p>
+<p>-t target 指定一台特定主机进行ARP （如果未指定，则为LAN上的所有主机）</p>
+<p>-r 两个主机(主机和目标)以捕获两个方向的流量 （仅对-t有效）</p>
+<p>host 指定您希望抓取数据包的host （通常是本地网关）  </p>
+<p>示例 echo 1 &gt; &#x2F;proc&#x2F;sys&#x2F;net&#x2F;ipv4&#x2F;ip_forward #开启端口转发</p>
+<p>cat &#x2F;proc&#x2F;sys&#x2F;net&#x2F;ipv4&#x2F;ip_forward #检测端口是否开启(1为开启 0为关闭)</p>
+<p>echo 0 &gt; &#x2F;proc&#x2F;sys&#x2F;net&#x2F;ipv4&#x2F;ip_forward #关闭端口转发</p>
+<p>sudo tc qdisc add dev eth0 root netem delay 200ms #限制网速200ms延时</p>
+<p>sudo tc qdisc del dev eth0 root netem delay 200ms #取消限制网速200ms延时</p>
+<p>arpspoof -i 网卡名 -t 欺骗的目标 我是谁</p>
+<p>arpspoof -i eth0 -t 受害者的IP 网关</p>
+<h1 id="周五-12-8"><a href="#周五-12-8" class="headerlink" title="周五 12.8"></a>周五 12.8</h1><h2 id="linux基本学习"><a href="#linux基本学习" class="headerlink" title="linux基本学习"></a>linux基本学习</h2><p><strong>根目录</strong>文件夹是Linux文件系统中<strong>最高级别</strong>的目录，它包含了系统中所有其他目录和文件的入口点。根目录下有一些重要的子目录，它们在Linux系统中具有不同的作用和功能。下面是一些常见的根目录子目录及其作用：</p>
+<h5 id="bin"><a href="#bin" class="headerlink" title="&#x2F;bin:"></a>&#x2F;bin:</h5><p>该目录包含了系统中最基本的可执行文件，如常用的命令(ls、cp、rm等)。</p>
+<h5 id="etc"><a href="#etc" class="headerlink" title="&#x2F;etc:"></a>&#x2F;etc:</h5><p>该目录包含了系统的配置文件，如网络配置、用户配置、服务配置等。</p>
+<h5 id="home"><a href="#home" class="headerlink" title="&#x2F;home:"></a>&#x2F;home:</h5><p>该目录是一般用户的主目录，每个用户在系统中都有一个独立的子目录，用于存储用户的个人文件和设置。</p>
+<h5 id="lib"><a href="#lib" class="headerlink" title="&#x2F;lib:"></a>&#x2F;lib:</h5><p>该目录包含了系统所需的共享库文件，这些库文件是可执行文件所依赖的文件，用于提供各种功能和支持。</p>
+<h5 id="root"><a href="#root" class="headerlink" title="&#x2F;root:"></a>&#x2F;root:</h5><p>该目录是系统管理员（root用户）的主目录，用于存储管理员的个人文件和设置。</p>
+<h5 id="tmp"><a href="#tmp" class="headerlink" title="&#x2F;tmp:"></a>&#x2F;tmp:</h5><p>该目录用于存储临时文件，这些文件在系统重启时会被清空。临时文件通常用于存储临时数据或者作为程序运行时的临时存储空间。</p>
+<h5 id="usr"><a href="#usr" class="headerlink" title="&#x2F;usr:"></a>&#x2F;usr:</h5><p>该目录包含了系统的用户应用程序和文件，如软件安装目录、文档目录、库文件目录等。这个目录通常是系统较大的部分，占用的磁盘空间较多。</p>
+<h5 id="var"><a href="#var" class="headerlink" title="&#x2F;var:"></a>&#x2F;var:</h5><p>该目录包含了系统的可变数据，如日志文件、数据库文件、缓存文件等。这些数据在系统运行过程中会不断变化。</p>
+<h3 id="文件列表，文件属性"><a href="#文件列表，文件属性" class="headerlink" title="文件列表，文件属性"></a>文件列表，文件属性</h3><p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231208164459557.png" alt="image-20231208164459557"></p>
+<h3 id="linux的部分基本命令"><a href="#linux的部分基本命令" class="headerlink" title="linux的部分基本命令"></a>linux的部分基本命令</h3><h5 id="ifconfig"><a href="#ifconfig" class="headerlink" title="ifconfig"></a>ifconfig</h5><p>查询ip地址指令</p>
+<h5 id="IS"><a href="#IS" class="headerlink" title="IS"></a>IS</h5><p>ls命令用来列出文件或目录信息，语法：ls [参数] [目录或文件]</p>
+<p>-a   &#x2F;&#x2F;列出包括以“”开始的隐藏文件在内的所有文件</p>
+<p>-t   &#x2F;&#x2F;依照文件最后修改时间的顺序列出文件</p>
+<p>-F   &#x2F;&#x2F;列出当前目录下的文件名及其类型</p>
+<p>-l    &#x2F;&#x2F;列出当前目录下所有文件的权限、所有者、文件大小、修改时间及名称</p>
+<p> -lg  &#x2F;&#x2F;同上，并显示出文件的所有者工作组名</p>
+<p>-R   &#x2F;&#x2F;显示出目录下以及其所有子目录的文件名</p>
+<h5 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a>mkdir</h5><p>mkdir命令用于创建一个目录：</p>
+<p>mkdir -p 路径   &#x2F;&#x2F;按路径目录的层次全部创建</p>
+<h5 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h5><p>cp命令主要用于文件或目录的复制：</p>
+<p>cp - r   原文件名   新文件名</p>
+<h5 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h5><p>pwd命令用于显示用户当前所处的目录</p>
+<h5 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h5><p>rm命令用于删除一个文件或目录</p>
+<h5 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h5><p>mv命令主要用于文件或目录的移动或改名：</p>
+<p>mv （要移动的文件名） （移入的文件名）</p>
+<h5 id="touch"><a href="#touch" class="headerlink" title="touch"></a>touch</h5><p>touch用于创建空白文件或更新已有文件的时间戳，语法：touch [参数] [文件名]</p>
+<p>-a   &#x2F;&#x2F;仅更新文件的访问时间戳。<br>-c   &#x2F;&#x2F;不创建任何文件。<br>-m  &#x2F;&#x2F;仅更新文件的修改时间戳。<br>-t    &#x2F;&#x2F;使用指定的时间戳而非当前时间。</p>
+<h5 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h5><p>cat命令用于连接文件并打印它们的内容，通常用于查看文件的内容、创建文件以及将文件连接在一起等操作，语法：cat [参数] [文件名]</p>
+<p>-n    &#x2F;&#x2F;同时显示行号。<br>-b   &#x2F;&#x2F;非空行显示行号。<br>-a   &#x2F;&#x2F;除了显示文件内容外，同时显示控制字符。</p>
+<h5 id="chmod"><a href="#chmod" class="headerlink" title="chmod"></a>chmod</h5><p>chmod命令用于更改文件或目录的权限，语法：chmod [参数] [文件]</p>
+<h5 id="find"><a href="#find" class="headerlink" title="find"></a>find</h5><p>find命令用于在指定目录及其子目录下搜索符合指定条件的文件和目录，语法：</p>
+<p>find [目录路径] [条件或动作]</p>
+<h5 id="vim-vi"><a href="#vim-vi" class="headerlink" title="vim&#x2F;vi"></a>vim&#x2F;vi</h5><p>是一款常用的文本编辑器，广泛用于Linux操作系统中，以下是部分vi的命令操作</p>
+<p>切换到插入模式：在普通模式下按 i 键。<br>保存并退出：在命令模式下输入 :wq，或者按 Shift + ZZ。<br>放弃修改并退出：在命令模式下输入 :q!。<br>在普通模式下删除一行：按 dd。<br>复制粘贴：在普通模式下按 yy 复制一行，用 p 粘贴。<br>查找文本：在命令模式下输入 &#x2F;text 来向下查找，或者 ?text 来向上查找。</p>
 
                 
                 <div class="readmore">
@@ -179,11 +227,11 @@
 <p>3.打开c盘新建文件夹，重命名为boke，右键文件夹选择Open Git Bash here，依次输入以下代码等待下载完成：<br>npm install -g hexo-cli<br>hexo init blog<br>cd blog<br>hexo g<br>hexo new x<br>hexo g<br>hexo s<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202172804892.png" alt="image-20231202172804892"></p>
 <p>4.打开浏览器，以IP：端口（192.168.138.129:4000&#x2F;）的形式搜索网页<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202172848786.png" alt="image-20231202172848786"></p>
 <p>5.在虚拟机中输入ctrl+c停止分享，依次输入以下命令：hexo clean；cd ~&#x2F;.ssh；ssh-keygen -t rsa -C “注册git hub的邮件地址”，打开c盘用户文件夹，选择admin，选择.ssh文件，选择id_rsa以记事本打开，复制，粘贴至git hub的设置ssh keys中生成密钥。<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202172953006.png" alt="image-20231202172953006"><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202173004266.png" alt="image-20231202173004266"></p>
-<p>6.输入命令“ssh -T <a href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#105;&#116;&#64;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;</a>”，选择yes，<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202173032581.png" alt="image-20231202173032581"></p>
+<p>6.输入命令“ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#117;&#98;&#x2e;&#99;&#x6f;&#109;">&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#117;&#98;&#x2e;&#99;&#x6f;&#109;</a>”，选择yes，<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202173032581.png" alt="image-20231202173032581"></p>
 <p>7.在blog文件栏打入cmd，输入命令npm install hexo-deployer-git –save<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202173100867.png" alt="image-20231202173100867"></p>
-<p>8.输入代码.git config –global user.name “xxx”&#x2F;&#x2F; 你的github用户名，非昵称<br>git config –global user.email “<a href="mailto:&#x78;&#120;&#x78;&#64;&#x71;&#x71;&#x2e;&#99;&#111;&#109;">&#x78;&#120;&#x78;&#64;&#x71;&#x71;&#x2e;&#99;&#111;&#109;</a>“&#x2F;&#x2F; 填写你的github注册邮箱<br>打开github网站，创建一个库<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202173117937.png" alt="image-20231202173117937"></p>
+<p>8.输入代码.git config –global user.name “xxx”&#x2F;&#x2F; 你的github用户名，非昵称<br>git config –global user.email “<a href="mailto:&#120;&#120;&#x78;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;">&#120;&#120;&#x78;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;</a>“&#x2F;&#x2F; 填写你的github注册邮箱<br>打开github网站，创建一个库<img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202173117937.png" alt="image-20231202173117937"></p>
 <p>9.于blog文档的congig文件以记事本打开，添加标识的代码：</p>
-<p>deploy:<br> type: git<br> repository: <a href="mailto:&#x67;&#105;&#x74;&#x40;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#46;&#99;&#111;&#109;">&#x67;&#105;&#x74;&#x40;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#46;&#99;&#111;&#109;</a>:xxx&#x2F;xxx.github.io.git<br> branch: main</p>
+<p>deploy:<br> type: git<br> repository: <a href="mailto:&#x67;&#x69;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#109;">&#x67;&#x69;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#109;</a>:xxx&#x2F;xxx.github.io.git<br> branch: main</p>
 <p>保存，于github命令栏输入<br>hexo d -g命令，完成本地文件的上传。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimgimage-20231202173155931.png" alt="image-20231202173155931"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/xoxoxooxox/image@main//imgimage-20231202173314783.png" alt="image-20231202173314783"></p>
